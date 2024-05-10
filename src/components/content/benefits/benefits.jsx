@@ -31,7 +31,7 @@ const Benefits = () => {
           <div className="grid4">
             <FaMagnifyingGlassDollar className="icon"/>
             <h2>Oportunidade</h2>
-            <p className="paragraph">Junte-se a nós hoje e experimente o futuro das finanças digitais com o Unicoins. Cadastre-se agora e comece a aproveitar todos os benefícios que nossa plataforma tem a oferecer!</p>
+            <p className="paragraph">Junte-se a nós hoje e experimente o futuro das finanças digitais com a Unicoins. Cadastre-se agora e comece a aproveitar todos os benefícios que nossa plataforma tem a oferecer!</p>
           </div>
         </div>
       </div>
