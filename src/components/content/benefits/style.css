@@ -1,0 +1,42 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 50px 100px 0 100px;
+}
+
+.grid1,
+.grid4 {
+  padding: 20px;
+}
+
+.grid2 {
+  border-left: 1px solid #262744;
+  border-bottom: 1px solid #262744;
+  padding: 20px;
+}
+
+.grid3 {
+  border-right: 1px solid #262744;
+  border-top: 1px solid #262744;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+.paragraph {
+  margin: 10px 0 10px 0;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 50px 0 50px
+}
+
+.benefits-title {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 25px;
+}

@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  cursor: default;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9395ce;
+  border-radius: 10px;
+}
