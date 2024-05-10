@@ -9,7 +9,7 @@ const Benefits = () => {
     <>
       <NavBar />
       <h1 className="benefits-title">
-        Bem-vindo ao Unicoins, a revolução das criptomoedas!
+        Bem-vindo a Unicoins, a revolução das criptomoedas!
       </h1>
       <div className="about-container">
         <div className="about-grid">
