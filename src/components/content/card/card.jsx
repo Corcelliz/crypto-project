@@ -11,7 +11,7 @@ const Card = () => {
     <>
       <NavBar />
       <div className="card-container">
-        <img className="card-img" src="public\assets\unicoin-card.png" />
+        <img className="card-img" src="\assets\unicoin-card.png" />
         <p className="card-paragraph">
           Nosso cartão Unicoins é o seu passaporte para o mundo das
           criptomoedas. Com ele, você pode usar o saldo de suas criptomoedas em
