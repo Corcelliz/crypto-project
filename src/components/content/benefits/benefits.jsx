@@ -16,7 +16,7 @@ const Benefits = () => {
         <div className="about-grid">
           <div className="grid1">
             <TfiThought className="icon" />
-            <h2>Inovação</h2>
+            <h2 className="subtitle">Inovação</h2>
             <p className="paragraph">
               O Unicoins é mais do que uma simples wallet de criptomoedas. É uma
               solução completa para suas necessidades financeiras digitais. Com
@@ -27,7 +27,7 @@ const Benefits = () => {
           </div>
           <div className="grid2">
             <FaHandshake className="icon" />
-            <h2>Parceria</h2>
+            <h2 className="subtitle">Parceria</h2>
             <p className="paragraph">
               A Apple e a Unicoins revoluciona os pagamentos digitais. Integrada
               ao Apple Vision Pro e ao Apple Watch, a Unicoins oferece
@@ -38,7 +38,7 @@ const Benefits = () => {
           </div>
           <div className="grid3">
             <FaArrowUpShortWide className="icon" />
-            <h2>Vantagem</h2>
+            <h2 className="subtitle">Vantagem</h2>
             <p className="paragraph">
               Com o Unicoins, você tem acesso a uma série de benefícios
               exclusivos, incluindo taxas competitivas, suporte 24/7, e
@@ -50,7 +50,7 @@ const Benefits = () => {
           </div>
           <div className="grid4">
             <FaMagnifyingGlassDollar className="icon" />
-            <h2>Oportunidade</h2>
+            <h2 className="subtitle">Oportunidade</h2>
             <p className="paragraph">
               Junte-se a nós hoje e experimente o futuro das finanças digitais
               com a Unicoins. Cadastre-se agora e comece a aproveitar todos os

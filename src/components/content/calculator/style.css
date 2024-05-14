@@ -1,0 +1,49 @@
+.investing-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.invest-container,
+.returnTax-container,
+.investmentPeriod-container {
+  margin-bottom: 30px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button-form {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.button-form:hover {
+  background-color: #0056b3;
+}
+
+.subtitle-h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}

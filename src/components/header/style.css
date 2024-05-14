@@ -10,6 +10,7 @@
 }
 
 .navbar-container {
+  max-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,9 +18,9 @@
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
 }
 
 .logo,
@@ -57,5 +58,10 @@ title {
 }
 
 .icon {
-  width: 4em;
+  width: 3em;
+  transition: all 200ms ease-in;
+}
+
+.icon:hover {
+  transform: scale(1.3);
 }

@@ -6,9 +6,9 @@ const NavBar = () => {
     <header className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <a>
+          <Link to="/">
             <img src="\assets\uniCoin-logo.png" className="icon" />
-          </a>
+          </Link>
           <title>Unicoins</title>
         </div>
         <div className="navbar-links">
@@ -20,6 +20,9 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/card">Cartão</Link>
+          </li>
+          <li>
+            <Link to="/invest">Investimento</Link>
           </li>
         </div>
       </div>
