@@ -39,9 +39,9 @@
 .content-paragraph { 
   text-align: center;
   padding-top: 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
-  color: #eea410;
+  color: #c5b477;
 }
 
 @media (min-width: 1500px) {
