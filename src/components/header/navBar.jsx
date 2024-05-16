@@ -22,7 +22,7 @@ const NavBar = () => {
             <Link to="/card">Cartão</Link>
           </li>
           <li>
-            <Link to="/invest">Investimento</Link>
+            <Link to="/invest">Conversor</Link>
           </li>
         </div>
       </div>

@@ -1,49 +1,69 @@
-.investing-container {
-  max-width: 500px;
-  margin: 50px auto;
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 50%;
+  gap: 30px;
+  background-color: rgba(52, 64, 116, 0.473);
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.calc-title {
+  margin-top: 60px;
+  font-weight: 300;
+  font-size: 30px;
 }
 
-.invest-container,
-.returnTax-container,
-.investmentPeriod-container {
-  margin-bottom: 30px;
+.button{
+  width: 100px;
+  padding: 15px;
+  border: 1px solid #f9ca67;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  background-color: #f9ca67;
+  opacity: 0.8;
 }
 
-input[type="number"],
-input[type="text"] {
-  width: 100%;
+.button:hover{
+  transform: scale(1.1);
+  opacity: 1;
+  background-color: #f9ca67;
+}
+
+input {
+  width: 50%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #f9ca67;
+  border-radius: 15px;
   font-size: 16px;
   text-align: center;
+  margin-top: 10px;
 }
 
-.button-form {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 15px;
+input:focus {
+  outline: none;
+  border-color: #f9ca67;
+  box-shadow: 0 0 5px #f9ca67;
 }
 
-.button-form:hover {
-  background-color: #0056b3;
+.paragraph {
+  display: flex;
+  margin: 10px 0 10px 0;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5rem;
+  align-items: center;
 }
 
-.subtitle-h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
+.FiDollarSign, .TbCurrencyReal  {
+  margin-left: 10px;
+  margin-right: 3px;
 }

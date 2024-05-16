@@ -16,7 +16,7 @@ const Card = () => {
           Nosso cartão Unicoins é o seu passaporte para o mundo das
           criptomoedas. Com ele, você pode usar o saldo de suas criptomoedas em
           milhões de estabelecimentos ao redor do mundo, tanto online quanto
-          offline. Seja para compras do dia a dia ou grandes investimentos, o
+          presencial. Seja para compras do dia a dia ou grandes investimentos, o
           cartão Unicoins oferece flexibilidade e conveniência sem igual.
         </p>
         <div className="icons">

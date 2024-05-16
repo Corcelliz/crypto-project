@@ -1,67 +1,61 @@
 import { useState } from "react";
 import NavBar from "../../header/navBar";
+import { TbCurrencyReal } from "react-icons/tb";
+import { FiDollarSign } from "react-icons/fi";
 import "./style.css";
 
-const CryptoTradeCalculator = () => {
-  const [initialInvestment, setInitialInvestment] = useState("");
-  const [annualReturnRate, setAnnualReturnRate] = useState("");
-  const [investmentPeriod, setInvestmentPeriod] = useState("");
-  const [totalReturn, setTotalReturn] = useState(0);
+const CryptoConverter = () => {
+  const [cryptoAmount, setCryptoAmount] = useState("");
+  const [convertedValueUSD, setConvertedValueUSD] = useState("");
+  const [convertedValueBRL, setConvertedValueBRL] = useState("");
 
-  const handleCalculate = () => {
-    if (initialInvestment && annualReturnRate && investmentPeriod) {
-      const principal = parseFloat(initialInvestment);
-      const rate = parseFloat(annualReturnRate) / 100; // Convert percentage to decimal
-      const years = parseInt(investmentPeriod);
+  const cryptoValueUSD = 18.5;
 
-      const total = principal * Math.pow(1 + rate, years);
-      setTotalReturn(total.toFixed(2));
-    } else {
-      alert("Por favor, preencha todos os campos.");
+  const handleCryptoAmountChange = (event) => {
+    setCryptoAmount(event.target.value);
+  };
+
+  const convertValues = () => {
+    const cryptoAmountFloat = parseFloat(cryptoAmount);
+
+    if (!isNaN(cryptoAmountFloat)) {
+      const conversionRateBRL = (5.13).toFixed(1);
+      const convertedValueBRL =
+        (cryptoValueUSD * cryptoAmountFloat * conversionRateBRL).toFixed(2);
+      setConvertedValueUSD(cryptoValueUSD * cryptoAmountFloat);
+      setConvertedValueBRL(convertedValueBRL);
     }
   };
 
   return (
-    <>
+    <div>
       <NavBar />
-      <div className="investing-container">
-        <h2 className="title">Simular Retorno de Investimento</h2>
-        <div className="invest-container">
-          <input
-          placeholder="Investimento Inicial (R$)"
-            type="number"
-            id="initialInvestment"
-            value={initialInvestment}
-            onChange={(e) => setInitialInvestment(e.target.value)}
-          />
-        </div>
-        <div className="returnTax-container">
-          <input
-          placeholder="Taxa de Retorno Anual (%)"
-            type="text"
-            id="annualReturnRate"
-            value={annualReturnRate}
-            onChange={(e) => setAnnualReturnRate(e.target.value)}
-          />
-        </div>
+      <div className="calc-container">
+        <h2 className="calc-title">Conversor Da UniCoins</h2>
         <div>
+          <label>Quantidade de criptomoeda:</label>
           <input
-            placeholder="Período de Investimento (Anos)"
-            type="number"
-            id="investmentPeriod"
-            value={investmentPeriod}
-            onChange={(e) => setInvestmentPeriod(e.target.value)}
+            type="text"
+            value={cryptoAmount}
+            onChange={handleCryptoAmountChange}
           />
         </div>
-        <button className="button-form" onClick={handleCalculate}>
-          Calcular
+        <button className="button" onClick={convertValues}>
+          Converter
         </button>
         <div>
-          <h3 className="subtitle-h3">Retorno Total do Investimento: R$ {totalReturn}</h3>
+          <p className="paragraph">
+            Valor em Dólar:
+            <FiDollarSign className="FiDollarSign" /> {convertedValueUSD}
+          </p>
+          <p className="paragraph">
+            Valor em Real:
+            <TbCurrencyReal className="TbCurrencyReal" /> {convertedValueBRL}
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default CryptoTradeCalculator;
+export default CryptoConverter;

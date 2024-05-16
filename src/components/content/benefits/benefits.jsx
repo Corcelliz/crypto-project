@@ -3,7 +3,7 @@ import NavBar from "../../header/navBar";
 import { TfiThought } from "react-icons/tfi";
 import { FaMagnifyingGlassDollar } from "react-icons/fa6";
 import { FaArrowUpShortWide } from "react-icons/fa6";
-import { FaHandshake } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 
 const Benefits = () => {
   return (
@@ -26,7 +26,7 @@ const Benefits = () => {
             </p>
           </div>
           <div className="grid2">
-            <FaHandshake className="icon" />
+            <FaApple className="icon" />
             <h2 className="subtitle">Parceria</h2>
             <p className="paragraph">
               A Apple e a Unicoins revoluciona os pagamentos digitais. Integrada
